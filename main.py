@@ -1,6 +1,6 @@
-import os
-from dotenv import load_dotenv
+def Hello_World():
+    print("Hello World")
 
-load_dotenv()
 
-print(os.environ.get("OPENAI_API_KEY"))
+if __name__ == "__main__":
+    Hello_World()
