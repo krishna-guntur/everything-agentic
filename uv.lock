@@ -376,8 +376,10 @@ dependencies = [
     { name = "langchain-ollama" },
     { name = "langchain-tavily" },
     { name = "langsmith" },
+    { name = "libtad" },
     { name = "logging" },
     { name = "python-dotenv" },
+    { name = "tavily" },
     { name = "transformers" },
 ]
 
@@ -391,8 +393,10 @@ requires-dist = [
     { name = "langchain-ollama", specifier = ">=1.1.0" },
     { name = "langchain-tavily", specifier = ">=0.2.18" },
     { name = "langsmith", specifier = ">=0.11.2" },
+    { name = "libtad", specifier = ">=1.1.1" },
     { name = "logging", specifier = ">=0.4.9.6" },
     { name = "python-dotenv", specifier = ">=1.2.3" },
+    { name = "tavily", specifier = ">=1.1.0" },
     { name = "transformers", specifier = ">=5.16.1" },
 ]
 
@@ -854,6 +858,15 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/c9/0a/1acb2a3ffbccbe8f8dc358778967c9d2979e8a59b67ceba6eb54474324ab/langsmith-0.11.2.tar.gz", hash = "sha256:927694c939c9fb44187e0126cf718413c45ffce2324d480438e70eb0526e1380", size = 4841592, upload-time = "2026-08-27T22:31:34.004Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/00/d9/cec0c1d24dda8c67a23ad204d0167e50aee202460e9388488661d94513f5/langsmith-0.11.2-py3-none-any.whl", hash = "sha256:75258142d27dffcc5df331479704b23fc3fd812cfca0469119bb9055a842882f", size = 753928, upload-time = "2026-08-27T22:31:31.644Z" },
+]
+
+[[package]]
+name = "libtad"
+version = "1.1.1"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/e2/b2/2d369abf2d99ff79c269164018307401817b540f7face7c0d8e61caee5c5/libtad-1.1.1.tar.gz", hash = "sha256:91fd477a71493f8240a1cac61f8f0273eddfeb59b2a7a3b6dd28ad0925d3df08", size = 30148, upload-time = "2023-02-07T11:05:04.094Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/53/b6/d279c880e37d480e8ed715366d4c76095d8e693e31f4b0e58b8b08991ec1/libtad-1.1.1-py3-none-any.whl", hash = "sha256:a242494b62a7f2896c2b5b465e27dcd9f18f294d253ad84d6a40e997cc7b2fe3", size = 56678, upload-time = "2023-02-07T11:05:02.474Z" },
 ]
 
 [[package]]
@@ -1657,6 +1670,16 @@ sdist = { url = "https://files.pythonhosted.org/packages/a2/87/a6771e1546d97e7e0
 wheels = [
     { url = "https://files.pythonhosted.org/packages/e9/44/75a9c9421471a6c4805dbf2356f7c181a29c1879239abab1ea2cc8f38b40/sniffio-1.3.1-py3-none-any.whl", hash = "sha256:2f6da418d1f1e0fddd844478f41680e794e6051915791a034ff65e5f100525a2", size = 10235, upload-time = "2024-02-25T23:20:01.196Z" },
 ]
+
+[[package]]
+name = "tavily"
+version = "1.1.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "aiohttp" },
+    { name = "requests" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/63/ba/cd74acdb0537a02fb5657afbd5fd5a27a298c85fc27f544912cc001377bb/tavily-1.1.0.tar.gz", hash = "sha256:7730bf10c925dc0d0d84f27a8979de842ecf88c2882183409addd855e27d8fab", size = 5081, upload-time = "2025-10-31T09:32:40.555Z" }
 
 [[package]]
 name = "tenacity"

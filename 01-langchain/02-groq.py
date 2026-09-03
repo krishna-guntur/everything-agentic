@@ -18,5 +18,5 @@ respone = requests.get(url=url, headers=headers)
 
 groq_models = respone.json()
 
-with open("groq_models.json", "w") as file:
+with open(r".\01-langchain\groq_models.json", "w") as file:
     json.dump(groq_models, file)

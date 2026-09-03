@@ -5,22 +5,25 @@ from langchain.agents import create_agent
 from langchain_ollama import ChatOllama
 from langchain_core.messages import HumanMessage
 from langchain.tools import tool
+from tavily import TavilyClient
+
 
 import json
 
+tavily = TavilyClient()
 
 @tool
-def search_weather(city: str) -> str:
+def search_weather(query: str) -> str:
     '''
         Tool that searches over the internet
         Args:
-            city: The city we need to check weather in.
+            query: The query that needs to be searched on the internet.
         Returns:
             search_result
     '''
 
-    print(f"Searching for weather in the city {city}")
-    print(f"It's always sunny in {city}")
+    print("Using Tavily Client")
+    tavily.search(query=query)
 
 
 def main():

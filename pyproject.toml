@@ -13,7 +13,9 @@ dependencies = [
     "langchain-ollama>=1.1.0",
     "langchain-tavily>=0.2.18",
     "langsmith>=0.11.2",
+    "libtad>=1.1.1",
     "logging>=0.4.9.6",
     "python-dotenv>=1.2.3",
+    "tavily>=1.1.0",
     "transformers>=5.16.1",
 ]
