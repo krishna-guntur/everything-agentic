@@ -1,7 +1,13 @@
 from langchain_core.prompts import PromptTemplate
 from langchain_ollama import ChatOllama
-
 from dotenv import load_dotenv
+import logging
+
+'''logging.basicConfig(
+    level=logging.INFO,
+    datefmt = 
+)'''
+
 
 load_dotenv()
 
